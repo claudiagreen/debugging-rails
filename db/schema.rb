@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 20160331172305) do
   create_table "mailboxer_notifications", force: :cascade do |t|
     t.string   "type"
     t.text     "body"
-    t.string   "subject",              default: ""
+    t.string   "subject",              default: "" #HERE ******************
     t.integer  "sender_id"
     t.string   "sender_type"
     t.integer  "conversation_id"
